@@ -49,11 +49,12 @@ a{
     width: 250px;
     flex-shrink: 1;
     background-color: black;
-    padding: 1.5rem 1rem .5rem;
+    padding: .5rem 1rem;
 }
 
 .box{
-    margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: 100%;
 }
 
 .box-container{
@@ -74,6 +75,8 @@ a{
     align-items: flex-end;
 }
 
+/* PRIMO BOX */
+
 .search{
     align-items: center;
     color: white;
@@ -93,6 +96,27 @@ a{
 .playlist-container li{
     margin: 1rem 0;
     list-style: none;
+}
+
+/* SECONDO BOX */
+
+#img-profile{
+    filter: contrast(100%);
+    background-color: grey;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+}
+#img-download{
+    height: 15px;
+}
+
+#img-profile,#img-download{
+    margin-right: .5rem;
+}
+
+.box-container hr{
+    margin: 1rem 0;
 }
 
 /* HOVER NAV */
