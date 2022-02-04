@@ -77,6 +77,10 @@ a{
 
 /* PRIMO BOX */
 
+#small-logo{
+    display: none;
+}
+
 .search{
     align-items: center;
     color: white;
@@ -155,4 +159,36 @@ a{
     text-decoration: none;
     color: white;
     background-color: rgba(0,  0, 0, 0.3);
+}
+
+
+
+
+/* MOBILE */
+@media screen and (max-width:576px) {
+    #navigation-spotify{
+        width: 80px;
+    }
+    #main-content,.premium-bar{
+        width: calc(100% - 80px);
+    }
+    .box:nth-child(3){
+        display: none;
+    }
+    .search a{
+        display: none;
+    }
+    .box-container:nth-child(2){
+        display: none;
+    }
+    #navigation-spotify > .box-container:first-child{
+        justify-content: flex-start;
+    }
+    #big-logo{
+        display: none;
+    }
+    #small-logo{
+        display: block;
+        height: 30px;
+    }
 }
