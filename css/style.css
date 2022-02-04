@@ -16,7 +16,7 @@ main{
 footer{
     height: 10vh;
     width: 100vw;
-    background-color: grey;
+    background-color: rgb(40, 40, 40);
 }
 
 .clearfix{
@@ -36,13 +36,34 @@ footer{
 #navigation-spotify{
     width: 17%;
     background-color: black;
+    flex-direction: column; 
+}
+
+.box-container{
+    height: 50%;
+    background-color: grey;
+}
+
+#navigation-spotify > .box-container:first-child{
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#navigation-spotify > .box-container:nth-child(2){
+    align-items: flex-end;
+}
+
+.box{
+    height: 50px;
+    width: 100%;
+    background-color: pink;
 }
 
 #main-content{
     position: relative;
     overflow-y: scroll;
     width: 83%;
-    background-color: blue;
+    background-color: rgb(20, 25, 34);
 }
 
 .premium-bar{
