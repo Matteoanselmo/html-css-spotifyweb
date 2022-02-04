@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Circular Std', sans-serif;
+}
+
+main{
+    height: 90vh;
+    width: 100vw;
+}
+
+footer{
+    height: 10vh;
+    width: 100vw;
+    background-color: grey;
+}
+
+.clearfix{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.float-left{
+    float: left;
+}
+
+#navigation-spotify{
+    width: 25%;
+    background-color: black;
+}
+
+#main-content{
+    overflow-y: scroll;
+    width: 75%;
+    background-color: blue;
+}
+
+.premium-bar{
+    justify-content: right;
+    align-items: center;
+    height: 10%;
+    background-color: rgba(0,  0, 0, 0.3);
+    color: white;
+}
