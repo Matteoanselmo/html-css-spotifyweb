@@ -81,6 +81,11 @@ a{
     display: none;
 }
 
+.list-container{
+    height: 25vh;
+    overflow: auto;
+}
+
 .search{
     align-items: center;
     color: white;
@@ -98,7 +103,7 @@ a{
     color: white;
 }
 .playlist-container li{
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     list-style: none;
 }
 
@@ -124,7 +129,7 @@ a{
 }
 
 /* HOVER NAV */
-#navigation-spotify a:hover{
+#navigation-spotify a:hover, .selection-list li a:hover{
     color: white;
 }
 
@@ -149,8 +154,6 @@ a{
     background-color: rgba(0,  0, 0, 0.3);
 }
 
-
-
 .premium-bar div a{
     padding: .7rem 2.5rem;
     margin-right: 1.5rem;
@@ -161,34 +164,71 @@ a{
     background-color: rgba(0,  0, 0, 0.3);
 }
 
+/* MAIN CONTAINER */
+/* MAIN SELECTION LIST */
+.main-container{
+    padding-top: 95px;
+}
+.selection-list{
+    text-align: center;
+}
+.selection-list li{
+    display: inline-block;
+    padding: 0 .5rem;
+}
 
+.selection-list li:hover{
+    border-bottom: 1px solid green;
+}
+/* MAIN RECENTLY PLAYED */
 
+.album-container{
+    flex-flow: column wrap;
+    align-items: center;
+}
+.album-container img{
+    width: 20%;
+}
+
+.album-img{
+    background-image: url(../img/metal_lifting.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    width: 100%;
+
+}
 
 /* MOBILE */
 @media screen and (max-width:576px) {
     #navigation-spotify{
-        width: 80px;
+        width: 50px;
     }
     #main-content,.premium-bar{
-        width: calc(100% - 80px);
+        width: calc(100% - 50px);
     }
-    .box:nth-child(3){
-        display: none;
-    }
-    .search a{
-        display: none;
-    }
-    .box-container:nth-child(2){
+    .box:nth-child(3), .box-container:nth-child(2) a,h4,hr,  .search a, #big-logo{
         display: none;
     }
     #navigation-spotify > .box-container:first-child{
         justify-content: flex-start;
     }
-    #big-logo{
-        display: none;
+    #logo{
+        display: flex;
+    }
+    .search,#logo{
+        justify-content: center;
     }
     #small-logo{
         display: block;
         height: 30px;
+    }
+    #img-download{
+        height: 20px;
+        margin: 0 0 2rem;
+    }
+    #img-profile{
+        margin: 0;
+
     }
 }
