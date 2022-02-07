@@ -16,9 +16,11 @@ main{
 footer{
     height: 80px;
     position: relative;
+    padding: 0 1rem;
     z-index: 3;
     background-color: rgb(40, 40, 40);
     justify-content: space-between;
+    align-items: center;
 }
 
 /* footer .player{
@@ -216,17 +218,74 @@ h3{
     margin-bottom: 1rem;
 }
 
+/* HOVER MAIN */
+
+.album-container:hover img{
+    filter: brightness(.4);
+}
+
+
 /* FOOTER */
 
 .footer-div-left{
-    width: 100px;
-    background-color: brown;
+    align-items: center;
 }
+
+.footer-div-left img{
+    width: 40px;
+}
+.name-album-player{
+    flex-direction: column;
+    margin: 0 2rem 0 1rem;
+    justify-content: flex-end;
+}
+footer p{
+    font-size: x-small;
+}
+
+.fa-heart{
+    margin-right: 1rem;
+}
+
+/* FOOTER CENTRAL PART-action*/
 .footer-div-central{
-    width: 400px;
-    background-color: blue;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
 }
+
+.central-music-actions{
+    justify-content: space-evenly;
+    width: 300px;
+}
+
+.central-music-actions i{
+    font-size: x-large;
+}
+
+/* FOOTER CENTRAL PART-musicbar*/
+
+.central-music-bar-container{
+    align-items: center;
+    width: 100%;
+}
+
+.music-bar{
+    width: 100%;
+    height: 5px;
+    background: gray;
+    margin: 1rem;
+    border-radius: 3px;
+}
+
+.music-bar > div{
+    width: 10%;
+    background: white;
+    border-radius: 5px;
+}
+
 .footer-div-right{
+    height: 100%;
     width: 100px;
     background-color: brown;
 }
