@@ -318,6 +318,35 @@ footer p{
     font-size: small;
 }
 
+/* HORIZONTAL TABLET */
+@media  screen and (min-width:769px) and (max-width:992px) {
+    .album-container{
+        width: calc(25% - 1rem);
+    }
+    .space-between{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .small-container{
+        width: 100%;
+    }
+}
+
+
+/* TABLET / HORIZONTAL SMARTPHONE */
+@media  screen and (min-width:577px) and (max-width:768px){
+    .album-container{
+        width: calc(50% - 1rem);
+    }
+    .space-between{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .small-container{
+        width: 100%;
+    }
+}
+
 /* MOBILE */
 @media screen and (max-width:576px) {
     #navigation-spotify{
@@ -348,5 +377,15 @@ footer p{
     }
     #img-profile{
         margin: 0;
+    }
+    .album-container{
+        width: calc(50% - 1rem);
+    }
+    .space-between{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .small-container{
+        width: 100%;
     }
 }
