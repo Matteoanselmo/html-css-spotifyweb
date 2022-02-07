@@ -263,6 +263,10 @@ footer p{
     font-size: x-large;
 }
 
+.central-music-actions i:hover{
+    color: white;
+}
+
 /* FOOTER CENTRAL PART-musicbar*/
 
 .central-music-bar-container{
@@ -270,24 +274,38 @@ footer p{
     width: 100%;
 }
 
-.music-bar{
-    width: 100%;
+.bar{
     height: 5px;
     background: gray;
-    margin: 1rem;
     border-radius: 3px;
 }
 
-.music-bar > div{
-    width: 10%;
+.music-bar{
+    width: 100%;
+    margin: 1rem;
+}
+
+.bar > div{
+    width: 25%;
     background: white;
     border-radius: 5px;
 }
 
+/* FOOTER RIGHT PART */
+
 .footer-div-right{
     height: 100%;
-    width: 100px;
-    background-color: brown;
+    width: 140px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.volume-bar{
+    width: 50%;
+}
+
+.footer-div-right > i{
+    font-size: small;
 }
 
 /* MOBILE */
