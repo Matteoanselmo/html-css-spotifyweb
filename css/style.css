@@ -201,15 +201,25 @@ h3{
 }
 /* MAIN RECENTLY PLAYED */
 
+.space-between{
+    justify-content: space-between;
+}
+
 .album-container{
     flex-flow: column wrap;
     align-items: center;
-    width: 300px;
+    justify-content: space-between;
+    width: 200px;
     margin-right: 1rem;
 }
+
 .album-container img{
-    width: 200px;
+    width: 100%;
 } 
+
+.small-container{
+    width: 30%;
+}
 
 .recently-section-container{
     padding: 1rem;
@@ -338,6 +348,5 @@ footer p{
     }
     #img-profile{
         margin: 0;
-
     }
 }
