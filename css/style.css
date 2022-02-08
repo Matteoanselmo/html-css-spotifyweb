@@ -294,7 +294,7 @@ footer p{
 
 .central-music-actions{
     justify-content: space-evenly;
-    width: 300px;
+    width: 235px;
 }
 
 .central-music-actions i{
@@ -355,7 +355,7 @@ footer p{
     height: 100%;
     width: 140px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .volume-bar{
@@ -363,7 +363,7 @@ footer p{
 }
 
 .footer-div-right > i{
-    font-size: small;
+    font-size: x-small;
 }
 
 /* HORIZONTAL TABLET */
@@ -435,5 +435,8 @@ footer p{
     }
     .small-container{
         width: 100%;
+    }
+    main{
+        min-width: 570px;
     }
 }
