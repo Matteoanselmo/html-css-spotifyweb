@@ -221,6 +221,7 @@ h3{
 
 .album-container img{
     width: 100%;
+    border-radius: 10px;
 } 
 
 .small-container{
@@ -262,6 +263,10 @@ h3{
 .album-container:hover .btn-play{
     display: inline;
     z-index: 3;
+}
+
+.popular-artist-container img{
+    border-radius: 50%;
 }
 
 
