@@ -202,8 +202,12 @@ h3{
     padding: 0 .5rem;
 }
 
+.selection-list li:first-child{
+    border-bottom: 1px solid lime;
+}
+
 .selection-list li:hover{
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid lime;
 }
 /* MAIN RECENTLY PLAYED */
 
